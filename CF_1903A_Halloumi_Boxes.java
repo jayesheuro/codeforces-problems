@@ -11,11 +11,11 @@ public class CF_1903A_Halloumi_Boxes {
             for(int i=0; i<n; i++) {
                 a[i] = sc.nextInt();
             }
-            
+            // if k is more than 2, in every case we can sort the array
             if(k>=2) {
                 System.out.println("YES");
             } else {
-                //check if array is sorted
+                // if k is 1 or less, we cannot sort the array if it is not already sorted
                 boolean sorted = true;
                 for(int i=0; i<n-1; i++){
                     if(a[i] > a[i+1]){
